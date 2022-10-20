@@ -7,6 +7,8 @@ import PS from '../assets/ps.png';
 import PR from '../assets/pr.png';
 import AI from '../assets/ai.png';
 import AE from '../assets/ae.png';
+import TW from '../assets/tailwind.png';
+import BS from '../assets/BS.png';
 
 function Skills() {
   return (
@@ -15,14 +17,9 @@ function Skills() {
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full '>
         <div>
           <p className='text-4xl font-bold inline border-b-4 border-green-300 '>
-            Experience
+            Skills
           </p>
-          <p className='py-4'>
-            ประสบการณ์การทำงานด้าน Developer กับทางองค์กรประเภท "บริษัท"
-            ยังไม่มี แต่เคยมีผลงานจากการรับจาก "บุคคลทั่วไป"
-            รวมไปถึงการฝึกสกิลการพัฒนาเว็บไซต์ทุกวันไม่ขาด
-            และนี่คือสกิลทั้งหมดที่ผมสามารถทำได้
-          </p>
+          <p className='py-4'>นี่คือสกิลทั้งหมดที่ผมมี</p>
         </div>
         <div className=' w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
           <div className='shadow-md shadow-black hover:scale-110 duration-500'>
@@ -56,6 +53,14 @@ function Skills() {
           <div className='shadow-md shadow-black hover:scale-110 duration-500'>
             <img className='w-20 mx-auto' src={AE} alt='AE icon' />
             <p>AE</p>
+          </div>
+          <div className='shadow-md shadow-black hover:scale-110 duration-500'>
+            <img className='w-20 mx-auto' src={TW} alt='TW icon' />
+            <p>TW</p>
+          </div>
+          <div className='shadow-md shadow-black hover:scale-110 duration-500'>
+            <img className='w-20 mx-auto' src={BS} alt='BS icon' />
+            <p>BS</p>
           </div>
         </div>
       </div>

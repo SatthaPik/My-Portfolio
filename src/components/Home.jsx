@@ -15,7 +15,7 @@ function Home() {
         <span className='md:text-5xl text-5xl  font-bold text-gray-400'>
           <Typewriter
             options={{
-              strings: ['I am fron-end developer.', 'I am beginner.'],
+              strings: ['I am front-end developer.', 'Nice to meet you.'],
               autoStart: true,
               loop: true,
             }}
@@ -30,14 +30,9 @@ function Home() {
           type='button'
           className='flex group px-4 justify-between items-center text-white border border-blue-500  rounded-md hover:bg-gradient-to-tr  from-green-400 to-blue-500 w-[180px] h-[50px]'
         >
-          <Link
-            className='font-bold text-green-300 hover:text-white duration-500'
-            to='skills'
-            smooth={true}
-            duration={500}
-          >
-            Viwe my skills
-          </Link>
+          <a href='Resume.pdf' download='Image-Profile.jpg' className='text-sm'>
+            Download Resume
+          </a>
           <span className='-rotate-90 group-hover:animate-bounce '>
             <FaArrowAltCircleDown />
           </span>

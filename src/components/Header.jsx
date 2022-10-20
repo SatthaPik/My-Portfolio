@@ -8,7 +8,7 @@ function Header() {
   const handleClick = () => setNav(!nav);
 
   return (
-    <nav className='fixed w-full flex justify-between items-center bg-black px-8 py-3 drop-shadow-lg text-white'>
+    <nav className='fixed w-full flex justify-between items-center scroll-my-10 bg-black  px-8 py-3 drop-shadow-lg text-white z-10'>
       <Link to='home' smooth={true} duration={500}>
         <div className='flex w-10'>
           <img src={imglogo} alt='Logo' />
@@ -17,7 +17,7 @@ function Header() {
       </Link>
 
       {/* menu list */}
-      <div className='menu p-5 '>
+      <div className='menu p-5'>
         <ul className='md:flex hidden font-bold  space-x-10 '>
           <li className='hover:text-green-300 duration-700 cursor-pointer'>
             <Link to='home' smooth={true} duration={500}>
@@ -35,7 +35,7 @@ function Header() {
             </Link>
           </li>
           <li className='hover:text-green-300 duration-700 cursor-pointer'>
-            <Link to='projects' smooth={true} duration={500}>
+            <Link to='project' smooth={true} duration={500}>
               Projects
             </Link>
           </li>
@@ -76,12 +76,7 @@ function Header() {
           </Link>
         </li>
         <li className='hover:text-green-300 duration-700'>
-          <Link
-            onClick={handleClick}
-            to='projects'
-            smooth={true}
-            duration={500}
-          >
+          <Link onClick={handleClick} to='project' smooth={true} duration={500}>
             Projects
           </Link>
         </li>
